@@ -1,7 +1,8 @@
+import React, { useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-const UserForm = props => {
 
+const UserForm = props => {
     const [id,setId] = useState(0);
     const [name,setName] = useState('');
 
@@ -20,7 +21,7 @@ const UserForm = props => {
                 <Typography component="h1" sx={{color: '#000000' }}>User Form</Typography>
                 
             </Grid>
-            <Grid item xs={12} sm={6}sx={{display:'flex'}}>
+            <Grid item xs={12} sm={6} sx={{display:'flex'}}>
                 <Typography
                 component={'label'}
                 htmlFor="id"
@@ -33,12 +34,12 @@ const UserForm = props => {
                 > ID
                 </Typography>
                 <input type="number" id="id" name="id" sx={{width:'400px'}}
-                value={''}
+                value={id}
                 onChange={e =>setId(e.target.value)}
                 />
             </Grid>
 
-             <Grid item xs={12} sm={6}sx={{display:'flex'}}>
+             <Grid item xs={12} sm={6} sx={{display:'flex'}}>
                 <Typography
                 
                 component={'label'}
