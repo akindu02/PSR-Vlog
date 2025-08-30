@@ -1,6 +1,5 @@
 import UserForm from "./UserForm";
-import UsersTable from "./Userstable";
-import { Box } from "@mui/material";    
+import UsersTable from "./UsersTable";    
 
 const users = [
     {
